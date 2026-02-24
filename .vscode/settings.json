@@ -12,6 +12,13 @@
   "editor.tabSize": 2,
   "explorer.compactFolders": false,
 
+  // 🛠 Code Runner
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.executorMap": {
+    "typescript": "npx tsx"
+  },
   // 🛠 Formatação e Lint
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -19,6 +26,10 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
 
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: PostSlugPageProps) {
   const { slug } = await params;
   const post: PostModel | null = await findPostBySlugCached(slug);
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: post?.title,
+    description: post?.excerpt,
   };
 }
 

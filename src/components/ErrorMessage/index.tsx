@@ -3,7 +3,7 @@ import clsx from 'clsx';
 type ErrorMessageProps = {
   pageTitle: string;
   contentTitle: string;
-  content: string;
+  content: string | React.ReactNode;
 };
 
 export default function ErrorMessage({
